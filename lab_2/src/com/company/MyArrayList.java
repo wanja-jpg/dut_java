@@ -1,6 +1,6 @@
 package com.company;
 
-public class MyArrayList {
+public class MyArrayList<T> {
     protected Object[] array;
     protected int size = 0;
 
@@ -15,7 +15,7 @@ public class MyArrayList {
         this.array = new Object[capacity];
     }
 
-    public void add(Object item){
+    public void add(T item){
         if(size == capacity-1){
             capacity *= 2;
             Object[] newArray = new Object[capacity];

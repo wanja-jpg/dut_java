@@ -53,7 +53,7 @@ public class MyLinkedList<T> {
         size--;
     }
 
-    public boolean contains(T data){
+    public boolean contains(Object data){
         for (int i = 0; i < size - 1; i++) {
             if(findNode(i).data == data){
                 return true;
